@@ -1,6 +1,6 @@
 var falafel = require('../');
 var test = require('tap').test;
-var vm = require('vm');
+//var vm = require('vm');
 
 test('for loop', function (t) {
     t.plan(3);
@@ -23,6 +23,7 @@ test('for loop', function (t) {
         }
     });
     
-    var res = vm.runInNewContext(output);
+    //var res = vm.runInNewContext(output);
+    var res = Function('return ' + output)();
     t.equal(res, 2 + 4 + 6 + 8);
 });
