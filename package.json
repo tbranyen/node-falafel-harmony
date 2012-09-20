@@ -40,7 +40,8 @@
     "testling" : {
         "files" : [ "test/for.js" ],
         "browsers" : {
-            "chrome" : [ "15.0" ]
+            "chrome" : [ "15.0" ],
+            "iexplore" : [ "9.0" ]
         }
     }
 }
