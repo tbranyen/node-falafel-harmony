@@ -26,4 +26,3 @@ test('for loop', function (t) {
     var res = vm.runInNewContext(output);
     t.equal(res, 2 + 4 + 6 + 8);
 });
-
